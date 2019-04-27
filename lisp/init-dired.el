@@ -8,9 +8,10 @@
 (let ((gls (executable-find "gls")))
   (when gls (setq insert-directory-program gls)))
 
-(when (maybe-require-package 'diredfl)
-  (after-load 'dired
-    (diredfl-global-mode)))
+;; 不加载 diredfl
+;; (when (maybe-require-package 'diredfl)
+;;   (after-load 'dired
+;;     (diredfl-global-mode)))
 
 (after-load 'dired
   (setq dired-recursive-deletes 'top)
