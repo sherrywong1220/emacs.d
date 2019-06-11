@@ -108,6 +108,10 @@
 ;; custom function
 ;;---------------------------------------------------------------------------
 (require 'dired-x)
+(require 'find-temp-file)
+(setq find-temp-file-directory "~/Documents/drafts")
+
+
 
 ;;---------------------------------------------------------------------------
 ;; org-mode settings
